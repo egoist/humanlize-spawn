@@ -1,11 +1,9 @@
 'use strict'
 
 var child = require('child_process')
+var split = require('split-space')
 
 module.exports.sync = function (command) {
-	if (typeof command !== 'string') {
-		throw new TypeError('Expected a string')
-	}
-	command = command.split(' ')
-	child.spawnSync(command[0], command.slice(1), {stdio: 'inherit'})
+	command = split(command)
+	return child.spawnSync(command[0], command.slice(1), {stdio: 'inherit'})
 }

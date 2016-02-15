@@ -21,7 +21,9 @@
   "keywords": [
     ""
   ],
-  "dependencies": {},
+  "dependencies": {
+    "split-space": "0.0.1"
+  },
   "devDependencies": {
     "ava": "^0.10.0",
     "execa": "^0.2.2",
