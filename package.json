@@ -1,6 +1,6 @@
 {
   "name": "humanlize-spawn",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Humanlized version of child_process&#39;s spawn and spawnSync",
   "license": "MIT",
   "repository": "egoist/humanlize-spawn",
